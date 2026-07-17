@@ -246,7 +246,18 @@ public class MultiPredictionAnalyzer {
     }
 
     public static void main(String[] args) throws IOException {
-        MultiPredictionAnalyzer analyzer = new MultiPredictionAnalyzer();
-        analyzer.analyze();
+        // 预测和验证
+//        MultiPredictionAnalyzer analyzer = new MultiPredictionAnalyzer();
+//        analyzer.analyze();
+
+        // 生成
+        // 基于第 100 条记录，生成下一条的5组预测
+        MultiPredictionAnalyzer multiPredictionAnalyzer = new MultiPredictionAnalyzer();
+        multiPredictionAnalyzer.loadData();
+        List<List<Integer>> predictions = multiPredictionAnalyzer.generateFivePredictions(100);
+        for (int i = 0; i < predictions.size(); i++) {
+            List<Integer> prediction = predictions.get(i);
+            System.out.println("策略" + (i + 1) + ": " + prediction);
+        }
     }
 }
