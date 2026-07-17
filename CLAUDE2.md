@@ -3,6 +3,7 @@
 ### 获取有序数据列表：
 1.通过反序列化获取所有有序数据，List<DoubleColorBallMatrixItem> matrixItemList = JSON.parseObject("/DoubleColorBallMatrixData.json", new TypeReference<List<DoubleColorBallMatrixItem>>() {});
 2.输出matrixItemList是否有数据，以及元素个数。
+3.matrixItemList中第一个DoubleColorBallMatrixItem时间最旧，最后一个DoubleColorBallMatrixItem时间最新，预测算法要以次时间顺序为准。
 
 ### 对列表中每个元素DoubleColorBallMatrixItem字段dataList的解释：
 dataList有7个元素，每个元素都是整数。
