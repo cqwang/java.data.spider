@@ -10,6 +10,9 @@ public class App
 {
     public static void main( String[] args )
     {
-        new DoubleColorBallDataBatchService().execute();
+        //        new DoubleColorBallDataBatchService().execute();
+
+        new DoubleColorBallDataPreparePipeline().process(null, null);
+
     }
 }
