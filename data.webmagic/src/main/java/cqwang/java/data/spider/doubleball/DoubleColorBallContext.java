@@ -12,7 +12,8 @@ public class DoubleColorBallContext {
     public static void write(){
         String json = JSON.toJSONString(allData);
 
-//        allData = JSON.parseObject(json, new TypeReference<List<DoubleColorBallItem>>() {});
+        // 写入文件，落地
+
         System.out.println();
     }
 }
