@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 
 /**
  * 双色球数据预测分析器 - 按照 DOUBLE_COLOR_BALL_CLAUDE.md 要求设计
+ * 当前版本基于历史数据进行预测，不符合时机需求
  *
  * 规则说明：
  * 1. matrixItemList[0] 时间最旧，matrixItemList[size-1] 时间最新
